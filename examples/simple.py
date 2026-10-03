@@ -413,7 +413,7 @@ screen1.set_style_bg_opa(lv.OPA.COVER, 0)
 
 
 title1 = lv.label(screen1)
-title1.set_text("Hola mundo " + lv.SYMBOL.DUMMY)
+title1.set_text("Hola mundo")
 title1.center()
 title1.set_style_text_font(lv.font_montserrat_16, lv.PART.MAIN)
 
