@@ -81,7 +81,7 @@ Si todo está funcionando, aparecerá:
 
 **Hola mundo**
 
-![CYD ejecutando script](capturas/foto1.jpg)
+![CYD ejecutando el script](capturas/foto1.jpg)
 
 ---
 
