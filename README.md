@@ -1,28 +1,25 @@
 # CYD ST7789 MicroPython + LVGL
 
-Firmware personalizado de **MicroPython + LVGL** para la placa **ESP32-2432S028** con pantalla **ST7789 de 2.8 pulgadas y resolución 240×320**.
+Firmware de MicroPython con LVGL preparado para la **ESP32-2432S028** con pantalla **ST7789 de 240×320**.
 
-Este firmware está configurado específicamente para esta variante de la **Cheap Yellow Display (CYD)** y está pensado para ejecutar aplicaciones gráficas desarrolladas con LVGL y MicroPython.
+Lo hice para tener una versión de MicroPython + LVGL que ya venga configurada para esta CYD y poder usarla directamente para mis proyectos.
 
-> ⚠️ **IMPORTANTE:** Este firmware está diseñado para la variante de CYD que utiliza el controlador **ST7789**. No lo instales en una CYD con otro controlador de pantalla sin comprobar primero la compatibilidad.
+## ⚠️ Importante
 
----
+Este firmware es **específico para la versión con ST7789**.
 
-## 📟 Hardware compatible
+No lo flashees en una CYD con ILI9341 u otro controlador de pantalla.
 
-### ESP32-2432S028
+Antes de instalarlo, asegúrate de que tu placa sea compatible.
 
-- **Microcontrolador:** ESP32
-- **Pantalla:** ST7789
-- **Resolución:** 240×320
-- **Tamaño:** 2.8"
-- **Touch:** XPT2046
-- **Interfaz:** SPI
-- **Firmware:** MicroPython + LVGL
+## Hardware
 
----
+**Placa:** ESP32-2432S028  
+**Pantalla:** ST7789  
+**Resolución:** 240×320  
+**Touch:** XPT2046
 
-## 🖥️ Configuración de la pantalla
+### Pantalla
 
 | Función | GPIO |
 |---|---:|
@@ -33,7 +30,7 @@ Este firmware está configurado específicamente para esta variante de la **Chea
 | DC | 2 |
 | Backlight | 21 |
 
-## 👆 Configuración del touch
+### Touch
 
 | Función | GPIO |
 |---|---:|
@@ -42,41 +39,38 @@ Este firmware está configurado específicamente para esta variante de la **Chea
 | SCK | 25 |
 | CS | 33 |
 
----
+## ¿Para qué sirve?
 
-## 🚀 ¿Qué es este proyecto?
-
-El objetivo de este proyecto es proporcionar un firmware de **MicroPython + LVGL precompilado y configurado específicamente para la CYD ESP32-2432S028 con pantalla ST7789**.
-
-La idea es evitar que sea necesario compilar y configurar manualmente MicroPython, LVGL y los controladores necesarios para comenzar a desarrollar aplicaciones gráficas en esta placa.
-
----
-
-## ✨ Características
+La idea es simplemente tener un firmware listo para empezar a hacer cosas con la CYD usando:
 
 - MicroPython
 - LVGL
-- Controlador ST7789
-- Pantalla de 240×320
-- Touch XPT2046
-- Wi-Fi
-- Configuración específica para ESP32-2432S028
-- Firmware precompilado
-- Diseñado para aplicaciones gráficas y proyectos con LVGL
+- ST7789
+- XPT2046
+
+Sin tener que compilar y configurar todo desde cero cada vez.
+
+## 📦 Firmware
+
+Las versiones compiladas estarán disponibles en **Releases**.
+
+Cada release tendrá su propio archivo `.bin` y la información necesaria para instalarlo.
+
+## 🧪 Estado
+
+Proyecto en desarrollo.
+
+El firmware se va probando directamente en una **ESP32-2432S028 con ST7789**, así que otras variantes de CYD pueden no funcionar.
+
+## Créditos
+
+Este proyecto utiliza:
+
+- MicroPython
+- LVGL
+
+No es un firmware oficial de MicroPython, LVGL, Espressif ni Sunton.
 
 ---
 
-## 📦 Instalación
-
-Los archivos `.bin` del firmware se encuentran en la sección **Releases** de este repositorio.
-
-Descarga la versión correspondiente a tu placa y sigue las instrucciones de instalación indicadas en la publicación de la versión.
-
-### ⚠️ Antes de instalar
-
-Comprueba que tu placa utiliza:
-
-```text
-ESP32-2432S028
-ST7789
-240×320
+Hecho por **Andreeu3000**.
