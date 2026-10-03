@@ -71,6 +71,16 @@ Este proyecto utiliza:
 
 No es un firmware oficial de MicroPython, LVGL, Espressif ni Sunton.
 
+## 🐍 Ejemplo rápido
+
+En `examples/simple.py` hay un ejemplo mínimo para comprobar que el firmware funciona correctamente.
+
+Ejecuta el archivo `simple.py` en la placa.
+
+Si todo está funcionando, aparecerá:
+
+**Hola mundo**
+
 ---
 
 Hecho por **Andreeu3000**.
