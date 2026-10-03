@@ -183,7 +183,7 @@ image_buffers = []
 image_descriptors = []
 
 
-def load_bin_image(filepath, width, height): #Cargar imágenes .bin CF_TRUE_COLOR
+def load_bin_image(filepath, width, height): #Cargar imágenes .bin CF_TRUE_COLOR Binary RGB565
 
     pixels = width * height
     expected = pixels * 2
@@ -254,7 +254,7 @@ def load_bin_image(filepath, width, height): #Cargar imágenes .bin CF_TRUE_COLO
     return dsc
 
 
-def load_bin_image_alpha(filepath, width, height): #Cargar imágenes CF_TRUE_COLOR_ALPHA
+def load_bin_image_alpha(filepath, width, height): #Cargar imágenes CF_TRUE_COLOR_ALPHA Binary RGB565
 
     pixels = width * height
     expected = pixels * 3
